@@ -4,7 +4,6 @@ var express = require('express');
 var path = require('path');
 // object top open a browser
 var open = require('open');
-
 //define a port
 var port = 3000;
 // create an express application
