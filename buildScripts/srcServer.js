@@ -1,13 +1,12 @@
 //use express as dev server
-var express = require('express');
-// support operations on request path
-var path = require('path');
+import express from 'express';
+import path from 'path';
 // object top open a browser
-var open = require('open');
+import open from 'open';
 //define a port
-var port = 3000;
+const port = 3000;
 // create an express application
-var app = express();
+const app = express();
 //define action for '/'
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname,'../src/index.html'));
