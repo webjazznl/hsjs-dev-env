@@ -6,6 +6,7 @@ import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
+/* eslint-disable no-console */
 //define a port
 const port = 3000;
 // create an express application
