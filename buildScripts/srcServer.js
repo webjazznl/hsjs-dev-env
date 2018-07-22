@@ -18,6 +18,11 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '../src/index.html'));
+});
+
+
 //start listening on port and open a browser (log error if any)
 app.listen(port, function(error){
   if(error) {
